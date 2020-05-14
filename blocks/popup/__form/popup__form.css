@@ -1,0 +1,6 @@
+@import url(./_editor/popup__form_editor.css);
+
+.popup__form {
+  margin-top: 60px;
+  position: relative;
+}

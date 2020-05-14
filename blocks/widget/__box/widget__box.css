@@ -1,0 +1,6 @@
+@import url(./__zoom-image/widget__zoom-image.css);
+@import url(./__close/widget__close.css);
+
+.widget__box {
+	position: relative;
+}

@@ -1,0 +1,9 @@
+@import url(./_editor/popup__close_editor.css);
+
+.popup__close {
+  width: 26px;
+  position: absolute;
+  top: -26px;
+  right: -26px;
+  cursor: pointer;
+}
