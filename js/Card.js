@@ -13,9 +13,8 @@ class Card {
       event.target.classList.contains('place-card__like-icon') &&
       !event.target.classList.contains('place-card__like-icon_liked')
     ) {
-      // вот это сложное условие очень плохо читается
       api
-        .putLikes(placeCard.dataset.cardId) // в таких случаях можно сделать переменную строкой выше, чтобы использовать её в этом условии
+        .putLikes(placeCard.dataset.cardId)
         .then((data) => {
           event.target.classList.toggle('place-card__like-icon_liked');
           counter.textContent = data.likes.length;
@@ -95,14 +94,9 @@ class Card {
     this._card = template.firstElementChild;
     this._card.dataset.cardId = obj._id;
     this._card.querySelector('.place-card__name').textContent = obj.name;
-    this._card.querySelector(
-      '.place-card__image'
-    ).style.backgroundImage = `url(${obj.link})`;
-    this._card
-      .querySelector('.place-card__like-icon')
-      .classList.add(`${this.setLikes(obj)}`);
-    this._card.querySelector('.place-card__like-counter').textContent =
-      obj.likes.length;
+    this._card.querySelector('.place-card__image').style.backgroundImage = `url(${obj.link})`;
+    this._card.querySelector('.place-card__like-icon').classList.add(this.setLikes(obj));
+    this._card.querySelector('.place-card__like-counter').textContent = obj.likes.length;
     this._card.querySelector('.place-card__image').style.cursor = 'pointer';
 
     // Сверка id пользователя и id автора карточки для отображения кнопки удаления
