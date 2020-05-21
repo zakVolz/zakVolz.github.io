@@ -11,9 +11,8 @@ class Api {
   // Получение информации о пользователе
   async getInfoUser() {
     const res = await fetch(`${this.key.server}/users/me`, {
-      // используется async/await -- здорово! только в таких случаях можно оборачивать эти конструкции
-      headers: this.key.headers, // в дополнительный блок try/catch, чтобы в catch отловить возможное падение запроса, отлоггировать
-    }); // ошибку, и дальше вернуть Promise.reject.
+      headers: this.key.headers,
+    });
     return this._getData(res);
   }
 
