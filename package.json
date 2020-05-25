@@ -1,0 +1,19 @@
+{
+  "name": "mesto",
+  "version": "0.0.2",
+  "description": "https://zakvolz.github.io/\r # zakVolz.github.io",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zakVolz/zakVolz.github.io.git"
+  },
+  "author": "zakVolz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zakVolz/zakVolz.github.io/issues"
+  },
+  "homepage": "https://github.com/zakVolz/zakVolz.github.io#readme"
+}

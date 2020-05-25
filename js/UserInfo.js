@@ -2,7 +2,8 @@ class UserInfo {
 	constructor(nameValue, infoValue) {
 		this.nameValue = nameValue;
 		this.infoValue = infoValue;
-	}
+	};
+	
 	// Передача информации в input
 	setUserInfo(inputValue, contentValue) {
 		inputValue.value = contentValue.textContent;
