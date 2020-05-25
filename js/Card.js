@@ -63,7 +63,7 @@ class Card {
   }
 
   // Установка слушателей на remove && like
-  setEventListeners() {
+  setEventListeners(event, api) {
     this.placesList.addEventListener('click', (event) => {
       this.like(event, api);
     });

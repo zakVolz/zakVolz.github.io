@@ -171,5 +171,5 @@ function main(user) {
   });
 
   // Вызов функции слушателей на remove && like
-  card.setEventListeners();
+  card.setEventListeners(event, api);
 };
